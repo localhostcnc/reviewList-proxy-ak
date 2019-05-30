@@ -3,16 +3,14 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
+const CORS =require('cors');
 
 const port = process.env.PORT || 3060;
 
 // enabling CORS
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
-});
+app.use(CORS());
 
+app.use('/ak', express.static('modules/reviewList-ak/client/dist/'));
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
