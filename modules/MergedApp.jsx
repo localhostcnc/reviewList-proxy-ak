@@ -9,5 +9,5 @@ import ReviewSection from "./reviewList-ak/client/src/index.jsx";
 ReactDOM.render(<App />,document.getElementById('calendar'));
 ReactDOM.render(<Booking />,document.getElementById('booking'));
 ReactDOM.render(<ListingInfo  />,document.getElementById('listingInfo'));
-ReactDOM.render(<ReviewSection />,document.getElementById('main'));
+ReactDOM.render(<ReviewSection />,document.getElementById('reviews'));
 

@@ -1,0 +1,21 @@
+#calendar {
+  margin-left: 80px;
+  width: 110%;
+  transform: scale(0.91);
+}
+
+#listingInfo {
+  margin-left: -50px;
+}
+
+#booking {
+  left: 800px;
+  top: 50px;
+  width: 100%;
+  position: fixed;
+}
+
+#reviews {
+  width: 60%;
+  margin-left: 60px;
+}
